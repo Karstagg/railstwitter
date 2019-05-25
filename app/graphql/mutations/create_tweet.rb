@@ -1,6 +1,5 @@
 module Mutations
   class CreateTweet < BaseMutation
-
     # arguments passed to the `resolved` method
     argument :content, String, required: true
 
@@ -10,7 +9,7 @@ module Mutations
     def resolve(content: nil)
       Tweet.create!(
           content: content,
-          user: User
+          user: context[:current_user]
           )
     end
   end
