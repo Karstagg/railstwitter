@@ -1,3 +1,4 @@
 SENDMAIL_PASSWORD: 'password'
 SENDMAIL_USERNAME: 'xxxxxxxxx@gmail.com'
+DEVISE_JWT_SECRET_KEY: 'use: bundle exec rake secret'
 MAIL_HOST: 'localhost:3000'
