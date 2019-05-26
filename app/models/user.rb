@@ -11,6 +11,7 @@ class User < ApplicationRecord
          :confirmable,
          :jwt_authenticatable,
          jwt_revocation_strategy: self
+  include Devise::JWT::RevocationStrategies::JTIMatcher
 
   # - VALIDATIONS
   validates_presence_of :email, :user_name

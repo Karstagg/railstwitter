@@ -22,6 +22,8 @@ module Types
       context[:current_user]
     end
 
+
+
     ## LOGOUT
     field :logout, Boolean, null: true
     def logout
@@ -63,7 +65,6 @@ module Types
           password: password,
           password_confirmation: password_confirmation,
           user_name: user_name
-
       )
     end
 
