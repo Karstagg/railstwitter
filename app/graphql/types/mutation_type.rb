@@ -1,6 +1,7 @@
 module Types
   class MutationType < BaseObject
     field :create_tweet, mutation: Mutations::CreateTweet
+    field :create_follow, mutation: Mutations::CreateFollow
     ## LOGIN
     field :login, UserType, null: true do
       argument :email, String, required: true

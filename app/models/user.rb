@@ -8,7 +8,6 @@ class User < ApplicationRecord
          :recoverable,
          :rememberable,
          :validatable,
-         :confirmable,
          :jwt_authenticatable,
          jwt_revocation_strategy: self
   include Devise::JWT::RevocationStrategies::JTIMatcher
