@@ -66,3 +66,5 @@ gem 'devise-jwt', '~> 0.5.8'
 
 gem 'graphql', '1.8.13'
 gem 'graphiql-rails', '1.5.0', group: :development
+
+gem 'webpacker', '~> 3.5'
