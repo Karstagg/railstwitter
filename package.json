@@ -3,7 +3,11 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "apollo-boost": "^0.4.0",
+    "graphql": "^14.3.1",
+    "graphql-anywhere": "^4.2.2",
     "vue": "^2.6.10",
+    "vue-apollo": "^3.0.0-beta.30",
     "vue-loader": "14.2.2",
     "vue-template-compiler": "^2.6.10"
   },
